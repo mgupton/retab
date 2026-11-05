@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MRU Tab Switcher for Edge",
+  "version": "2.0.0",
+  "description": "Cycles Edge tabs through a frozen most-recently-used snapshot during a shortcut sequence.",
+  "permissions": ["tabs", "storage"],
+  "background": { "service_worker": "background.js" },
+  "commands": {
+    "mru-forward": {
+      "suggested_key": { "default": "Alt+Q", "windows": "Alt+Q" },
+      "description": "Cycle forward through the MRU tab snapshot"
+    },
+    "mru-backward": {
+      "suggested_key": { "default": "Alt+Shift+Q", "windows": "Alt+Shift+Q" },
+      "description": "Cycle backward through the MRU tab snapshot"
+    }
+  }
+}
